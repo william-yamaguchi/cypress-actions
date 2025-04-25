@@ -9,8 +9,8 @@ jobs:
       - name: Get code
         uses: actions/checkout@v4.2.2
 
-    - name: Install dependencies
-      run: yarn install
+      - name: Install dependencies
+        run: yarn install
 
-  -name: Run E2E teste
-    run: yarn cypress run
+      -name: Run E2E teste
+       run: yarn cypress run
