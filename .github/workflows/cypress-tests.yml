@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v3.3.0
 
       - name: Install dependencies
         run: yarn install
 
-      -name: Run E2E teste
-       run: yarn cypress run
+      - name: Run E2E teste
+        run: yarn cypress run
